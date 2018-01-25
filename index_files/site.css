@@ -1,0 +1,132 @@
+﻿/*
+* Created By: MDC Web Services
+* Description: 
+* Revised: 
+*/
+/*.shark-masthead {
+	background-image: url(/shark/img/NameTheShark-Top.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: contain;
+  	
+  	background-color: #09141e;
+}*/
+
+
+
+
+.shark-bg p {
+	font-family: 'Droid Sans', sans-serif;
+	color: #6d6d6d;
+	font-size: 16px;
+	letter-spacing: 0.8px;
+}
+.cta-btn .btn {
+	font-family: 'Droid Sans', sans-serif;
+}
+
+
+.btn-info {
+    background-color: #47C4FF;
+    border-color: #47C4FF;
+}
+
+
+#siteContent > div.intro  p {
+	
+	 font-size: 20px;
+    line-height: 30px;
+	
+	}
+
+@media (min-width: 1200px) {
+	.shark-masthead {
+		
+	}
+}
+@media (min-width: 768px) {
+	.shark-bg {
+		background-color: #09141e;
+	}
+}
+.content-wrapper {
+	
+}
+@media (min-width: 1200px) {
+	.content-wrapper {
+		width: 1040px;
+	}
+}
+@media (min-width: 768px) {
+	.content-wrapper {
+	}
+}
+
+.shark-masthead {
+	background-color: #09141e;
+}
+.headline-img {
+	padding: 10px 30px 30px;
+}
+.btn {
+    border-radius: 0;
+}
+.shark-details {
+	background-color: #e8e9ed;
+	padding: 30px 80px;
+}
+.intro {
+	background-color: #fff;
+	text-align: center;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+@media (max-width: 767px){
+.intro {
+    padding-left: 20px;
+    padding-right: 20px;
+	}
+}
+@media (min-width: 768px) {
+	.intro {
+
+		padding-left: 80px;
+		padding-right: 80px;
+
+	}
+}
+.mdc-footer-links {
+	margin-top: 0;
+}
+h3 {
+	text-transform: uppercase;
+	text-align: center;
+}
+.submit-area {
+	background-color: #fff;
+	padding: 30px 60px 80px;
+	text-align: center;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #222222;
+}
+.cta-btn {
+	padding: 30px;
+}
+.intro h2 {
+	margin-bottom: 30px;
+}
+.header-spacing {
+	margin-bottom: 30px;
+}
+.btn-lg {	
+	text-transform: uppercase;
+}
+@media (min-width: 467px) {
+	.btn-lg {
+		padding: 20px 80px;
+	}
+}

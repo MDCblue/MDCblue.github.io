@@ -1,0 +1,1494 @@
+﻿/*
+* Created By: MDC Web Services
+* Description: GLOBAL stylesheet 
+* Revised: 8/20/2013
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Typography
+2.0 - Navigation
+    2.1 - Global Navbar
+    2.2 - Site Masthead
+    2.3 - Breadcrumbs
+3.0 - Elements
+    3.1 - Carousel
+    3.2 - Featured Panel
+    3.3 - Social Media Services
+    3.4 - Lists
+    3.5 - Tables
+    3.6 - Modals
+4.0 - Content
+    4.1 - Pages
+    4.2 - Landing Pages
+5.0 Media
+    5.1 - Images
+    5.2 - Icons and Thumbnails
+    5.3 - Captions
+6.0 Forms
+7.0 Global Footer
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 - Typography
+--------------------------------------------------------------*/
+h1,
+.h1 {
+  font-size: 60px;
+}
+h2,
+.h2 {
+  font-size: 37px;
+}
+h3,
+.h3 {
+  font-size: 23px;
+}
+h4,
+.h4 {
+  font-size: 18px;
+}
+h5,
+.h5 {
+  font-size: 14px;
+}
+h6,
+.h6 {
+  font-size: 14px;
+}
+
+/* Header Overrides */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+font-weight: bold;
+line-height: 1.25;
+}
+
+h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h1 .small, .h1 .small, h2 .small, .h2 .small, h3 .small, .h3 .small {
+    font-size: 50%;
+    display: inline-block;
+}
+.sec-nav > li.active > a,
+.sec-nav > li.active > a:hover,
+.sec-nav > li.active > a:focus {
+  color: #333;
+  background-color: #eee;
+  font-weight: bold;
+}
+
+p a:link, p a:visited, ul a:link, ul a:visited, table a:link, table a:visited, #content a:link, #content a:visited, #siteContent a:link, #siteContent a:visited { 
+  text-decoration: underline; 
+} 
+  
+p a:hover, p a:active, ul a:hover, ul a:active, table a:hover, table a:active, #content a:hover, #content a:active, #siteContent a:hover, #siteContent a:active { 
+  text-decoration: none; 
+} 
+
+.nav a:link, .nav a:visited, .mdc-footer-links a:link, .mdc-footer-links a:visited, .mdc-footer-bottom a:link, .mdc-footer-bottom a:visited, .panel-title a:link, .panel-title a:visited, .list-decoration a:link, .list-decoration a:visited, .typeahead a:link, .typeahead a:visited, .btn {
+  text-decoration: none !important;
+}
+
+.mdc-footer-links a:hover, .mdc-footer-links a:active, .mdc-footer-bottom a:hover, .mdc-footer-bottom a:active, .panel-title a:hover, .panel-title a:active, .list-decoration a:hover, .list-decoration a:active {
+  text-decoration: underline !important;
+}
+
+.important-text {
+     font-size: larger;
+}
+
+/*--------------------------------------------------------------
+2.0 - Navigation
+--------------------------------------------------------------*/
+/* default tab override */
+.nav-tabs {
+    margin-bottom: 15px;
+}
+
+/* new default for tabs */
+.nav-tabs > li > a {
+    color: #005dab;
+    text-decoration: none;
+    background-color: #eee;
+    border-color: #eee #eee #ddd;
+}
+
+.nav-stacked > li + li {
+    margin-top: 0;
+}
+
+.nav-pills > li > a {
+    border-radius: 0px;
+}
+
+.sec-nav {
+    margin-bottom: 20px;
+}
+
+.sec-nav li{
+    border-bottom: 1px solid #eee;
+}
+
+/* override bootstrap for collapse as big as content */
+.navbar-collapse {
+    max-height:none;
+}
+
+/* brand override for MDC logo */
+#navLogo {
+    padding-bottom: 8px;
+    padding-top: 10px;
+}
+
+/* site navigation text */
+p.navbar-brand {
+    margin: 0px;
+}
+
+@media (min-width: 980px) {
+    p.navbar-brand {
+        display: none;
+    }
+}
+
+/* floating right panels (smaller than parent) will have left margin for content */
+.panel.pull-right {
+    margin: 0px 0px 5px 15px;
+}
+
+/* new style for panel (related content) footer links and icons */
+.panel-footer a {
+    display: block;
+}
+
+.panel-footer span {
+    float: right;
+}
+.panel-title a {
+  font-size: 14px;
+}
+
+/* skip nagivation shows below global when focused with tab key */
+.skip {
+  list-style: none;
+  margin: 0; 
+  padding: 0; 
+  line-height: 30px;
+  background-color: #222;
+}
+
+.skip a {
+  font-weight: normal;
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip a:focus {
+  display: block;
+  position: static;
+  width: auto;
+  height: auto;
+  color: white;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .skip a:focus {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .skip a:focus {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .skip a:focus {
+    width: 1170px;
+  }
+}
+
+/*--------------------------------------------------------------
+2.1 - Global Navbar
+--------------------------------------------------------------*/
+/* global navigation fix top */
+body {
+    line-height: 23px;
+    padding-top: 50px;
+}
+
+.navbar-header img {
+    padding-top: 6px;
+}
+
+.navbar-portals {
+  margin-right:5px;
+}
+
+.dropdown-portals {
+  border:none !important;
+}
+
+.dropdown-header-portals {
+  font-weight: bold;
+  padding-left:10px;
+}
+
+.dropdown-menu-portals {
+  left:0 !important;
+}
+
+.dropdown-toggle-portals {
+  padding: 7px 12px !important;
+  background-color:#333;
+  border:none;
+}
+
+.glyphicon-plus-portals {
+  font-size:10px;
+  top:0;
+}
+
+.icon-plus-portals {
+  margin: -2px 1px 0 0;
+}
+
+@media (max-width: 768px) {
+    .navbar-header img {
+    padding-left: 15px;
+  }
+  .navbar-portals {
+    margin-right:0;
+    margin-left:0;
+  }
+  .dropdown-header-portals {
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+   .nav > li > a {
+    padding: 15px 8px;
+  }
+  .portals-text {
+    display: none;
+  }  
+  .glyphicon-plus-portals {
+    font-size:9px;
+    top:0;
+  }
+  .icon-plus-portals {
+    margin: -1px 0 0 0;
+    width: 9px;
+  }
+  .dropdown-header-portals {
+    color: #333;
+  }
+}
+
+@media (min-width: 768px) {
+.global-nav .input-group { max-width: 210px; }
+}
+
+/* search input smaller to fit global nav */
+form.navbar-right input {
+}
+
+.hidden-search {
+    margin-bottom: 10px;
+}
+
+.search-trigger {
+    padding: 6px 0;
+}
+
+@media (min-width: 1200px) {
+    .navbar-inverse .navbar-nav > li > a {
+    border-right: solid 1px #000;
+    }
+
+    .navbar-inverse .navbar-nav > li:first-child {
+    border-left: solid 1px #000;
+    }
+}
+
+@media (min-width: 768px) {
+    .container > .mdc-branding {
+        margin-right: 20px;
+     }
+}
+
+.search-icon a {
+    color: #999;
+}
+
+.search-icon a:hover {
+    color: #fff;
+}
+
+.sec-nav > li.active > a,
+.sec-nav > li.active > a:hover,
+.sec-nav > li.active > a:focus {
+  color: #333;
+  background-color: #eee;
+  font-weight: bold;
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #eee;
+  border-color: #333;
+}
+.global-nav .navbar-nav > li > a {
+      color: #fff;
+  }
+@media (min-width: 768px) and (max-width: 992px) {
+  .global-nav .navbar-nav > li > a {
+      font-size: 12px;
+  }
+  .dropdown-toggle-portals {
+    margin-right: 5px;
+    background-color:#333;
+    border:none;
+    height: 34px;
+  }
+  .dropdown-menu-portals {
+    left:-150px !important;
+    right: 5px !important;
+  }
+}
+
+.navbar legend {
+  display: none;
+}
+
+.navbar .dropdown-toggle:focus {
+  outline-color: rgb(77, 144, 254);
+  outline-offset: -2px;
+  outline-width: 1px;
+  outline-style: solid;
+}
+
+/*--------------------------------------------------------------
+2.2 - Site Masthead - Academics
+--------------------------------------------------------------*/
+/* remove from masthead */
+.site-masthead strong {
+    display: none;
+}
+/*Academics*/
+.title-name h1 {
+  font-size: 24px;
+  margin: 0;
+}
+.academics-masthead .site-masthead  {
+  background-image: url("/academics/img/academics-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #1565c0;
+  color: #fff;
+}
+.academics-masthead .title-name.title-background span {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@media (min-width: 768px) {
+
+  .academics-masthead .title-area { 
+    width: 100%; 
+    position: relative;
+  }
+  .academics-masthead .title-container { 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    display: table; 
+  }
+  .academics-masthead .title-name {
+    display: table-cell; 
+    vertical-align: middle;
+  }
+}
+@media (max-width: 767px) {
+  .academics-masthead .site-masthead {
+    padding:10px 0;
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .academics-masthead .title-area { 
+    height: 120px;  
+  }
+
+  .academics-masthead .title-container { 
+    height: 120px; 
+  }
+
+  .academics-masthead .title-name h1 {
+    font-size: 37px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .academics-masthead .title-area { 
+    height: 140px;  
+  }
+
+  .academics-masthead .title-container { 
+    height: 140px; 
+  }
+
+  .academics-masthead .title-name h1 {
+    font-size: 48px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .academics-masthead .title-area { 
+    height: 180px;  
+  }
+
+  .academics-masthead .title-container { 
+    height: 180px; 
+  }
+  .academics-masthead .title-name h1 {
+    font-size: 60px;
+  }
+}
+/*Style the Masthead Navigation*/
+.navbar-default {
+  background-color: #005dab;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #0077da;
+  color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-default .navbar-collapse {
+  border-color: #1079BE;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #0060a9;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #0f76cf;
+  -webkit-box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.19);
+-moz-box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.19);
+box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.19);
+}
+
+/* For pages where the title has to be hidden */
+.page-title-hidden {
+	position: absolute;
+    left: -100000000px;
+}	
+
+/* For degree titles with track names */
+.page-header h2 {
+	line-height: 32px;
+	padding-bottom: 8px;
+}
+/*--------------------------------------------------------------
+2.3 - Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumb {
+    background-color: #eff1f1;
+    border-radius: 0;
+}
+
+/*--------------------------------------------------------------
+3.0 - Elements
+--------------------------------------------------------------*/
+/*Wells*/
+.well {
+  border-radius: 0;
+}
+/*Panels*/
+.panel {
+  border-radius: 0;
+}
+
+.panel-heading {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.panel-group .panel {
+  border-radius: 0;
+}
+.panel-title {
+  font-size: 14px;
+  font-weight: 400;
+}
+/* Media List MDC Overrides */
+.media {
+    margin-top: 20px;
+}
+.media-right,
+.media > .pull-right {
+  padding-left: 20px;
+}
+.media-left,
+.media > .pull-left {
+  padding-right: 20px;
+}
+.media-list li {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 13px;
+}
+
+
+/* Jumbotron */
+.jumbotron-zero-padd {
+    padding: 0px !important;
+}
+
+.jumbotron-sm-padd {
+    padding: 15px !important;
+}
+
+.list-border>li {
+border-bottom: 1px solid #eee;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 0;
+}
+
+.btn-primary {
+  background-color: #005dab;
+  border-color: #02468d;
+}
+
+.btn-primary:hover {
+  background-color: #0077da;
+}
+
+.btn-primary-global-nav {
+  border-color: #005dab;
+  height: 34px;
+}
+
+.btn-success {
+  background-color: #388538;
+  border-color: #226c22;
+}
+
+.btn-success:hover {
+  background-color: #266E26;
+}
+
+.btn-info {
+  background-color: #1B7E9A;
+  border-color: #156175;
+}
+
+.btn-info:hover {
+  background-color: #196E85;
+}
+
+.btn-danger {
+  background-color: #cd0028;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #990400;
+}
+
+.btn-default-login {
+  background-color: #efefef;
+  border-color: #c6c6c6;
+}
+
+/* all iframes with fit their parent width */
+body iframe {
+    width: 100% !important;
+    border: none;
+}
+
+/* navbar form style  */
+.navbar-form {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+@media (min-width: 980px) {
+    .navbar-form {
+        display: inline-table;
+        padding-right: 0px;
+    }
+}
+
+/*--------------------------------------------------------------
+3.1 - Carousel
+--------------------------------------------------------------*/
+/* CAROUSEL OVERRIDE */
+
+#play-pause {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    color: white;
+    border: 1px solid;
+    /*border-radius: 40px;*/
+    height: 32px;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: auto;
+    z-index: 20;
+}
+
+#play-pause:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.carousel-control {
+    z-index: 10;
+}
+
+.caption-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+}
+
+.caption-bottom-left {
+    position: absolute;
+    right: 25%;
+    bottom: 10px;
+    left: 0;
+    padding: 15px;
+}
+.caption-bottom-right {
+    position: absolute;
+    left: 25%;
+    bottom: 10px;
+    right: 0;
+    padding: 15px;
+}
+.caption-left {
+    position: absolute;
+    right: 68%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    padding: 50px 15px;
+}
+.caption-right {
+    position: absolute;
+    left: 68%;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    padding: 50px 15px;
+}
+/* this class will control the theme of carousel */
+.dark-caption-background .carousel-caption {
+    background: #333;
+    background: rgba(0,0,0,0.75);
+}
+/* change caption title for better design */
+.carousel-caption > h3 {
+    margin-top: 0px;
+}
+/* carousel caption indicator center/top */
+.indicators-top {
+    bottom: 85%;
+}
+/*MDC Templates Carousel 1/27/2015*/
+.mdc-carousel .carousel-indicators {
+    bottom: 0;
+}
+/*@media (min-width: 467px) {
+    .mdc-carousel .carousel-control {
+        bottom: 65%;
+        height: 60px;
+    }
+    .mdc-carousel .carousel-control.left {
+    right: 80px;
+    left: auto;
+    }   
+}
+*/
+.mdc-carousel .carousel-control.left {
+    background-image: none;
+}
+.mdc-carousel .carousel-control.right {
+    background-image: none;
+}
+.mdc-carousel .carousel-caption {
+    background:#222222;
+    background: rgba(34,34,34,0.75);
+    right: 0;
+    left:0;
+    bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.mdc-carousel .carousel-caption h3 {
+    font-weight: 400;
+    text-shadow:none;
+}
+@media (max-width: 767px) {
+    .mdc-carousel .carousel-caption {
+        position: static;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .mdc-carousel .carousel-caption h3 {
+        font-size: 16px;
+    }
+    .mdc-carousel .carousel-caption p {
+        display: none;
+    }
+    #play-pause {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    #play-pause .glyphicon {
+       margin-left:-1px;
+    }
+}
+/*@media (min-width: 992px) {
+    .mdc-carousel .carousel-caption.headline-right {
+        right: 5%;
+        left: 62%;
+        top: 0;
+        bottom: 0;
+        padding: 20px;
+        margin: auto;
+        overflow: hidden;   
+    }
+    .mdc-carousel .carousel-caption.headline-left {
+        right: 62%;
+        left: 5%;
+        top: 0;
+        bottom: 0;
+        padding: 20px;
+        margin: auto;
+        overflow: hidden;   
+    }
+}
+@media (min-width: 992px) and (max-width: 1366px){
+    .mdc-carousel .carousel-caption.headline-right{
+        height: 180px;
+    }
+    .mdc-carousel .carousel-caption.headline-left{
+        height: 180px;
+    } 
+}
+@media (min-width: 1367px) {
+    .mdc-carousel .carousel-caption.headline-right {
+        height: 180px;
+        right: 6%;
+        left: 70%;
+    }
+    .mdc-carousel .carousel-caption.headline-left {
+        height: 180px;
+        right: 70%;
+        left: 6%;
+    }
+}*/
+/*--------------------------------------------------------------
+3.3 - Featured Panel
+--------------------------------------------------------------*/
+.featured-panel {
+  background-color: #f1f1f1;
+}
+@media (max-width: 991px) {
+  .cta-section-content {
+    padding-left: 30px;
+  }
+}
+.cta-section-content{
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+  .cta-section { 
+    width: 100%; 
+    position: relative;
+  }
+  .cta-section-container { 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    display: table; 
+  }
+  .cta-section-content {
+    display: table-cell; 
+    vertical-align: middle;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .cta-section { 
+    height: 338px;  
+  }
+
+  .cta-section-container { 
+    height: 338px; 
+  }
+}
+@media (min-width: 1200px) {
+  .cta-section { 
+    height: 413px;
+  }
+
+  .cta-section-container { 
+    height: 413px; 
+  }
+}
+.cta-section-content h4 {
+  font-weight: 400;
+  font-size: 26px;
+}
+/*--------------------------------------------------------------
+3.3 - Social Media Services
+--------------------------------------------------------------*/
+/* Style for mobile devices only */
+@media (max-width: 550px) {
+    /* hide one social media button */
+    .st_email_hcount {
+        display: none;
+    }
+}
+
+/* twitter timeline style */
+.twitter-timeline {
+    margin-bottom: 20px;
+}
+/* make facebook coment fit parent */
+.fb-comments, .fb-comments iframe[style], .fb-comments > span {
+    width: 100% !important;
+}
+/* spacing above facebook comments */
+.comments-title {
+    margin-top: 30px;
+}
+/* social buttons style */
+@media (min-width: 992px) {
+  .social-buttons {
+      padding-top: 8px;
+  }
+}
+/* override from bootstrap */
+.social-buttons span {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .social-buttons span {
+    margin-bottom: 2px;
+  }
+}
+.social-aside {
+margin-bottom: 30px;
+}
+.social-col li a img {
+text-decoration:none;
+margin-right:10px;	
+}
+/*--------------------------------------------------------------
+3.4 - Lists
+--------------------------------------------------------------*/
+.list-divider >li {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.list-divider >li:last-child {
+    border-bottom: none;
+}
+
+.divider-vertical {
+    height: 12px;
+    margin: 0 9px;
+    border-left: 1px solid #F2F2F2;
+    border-right: 1px solid #FFF;
+}
+
+.list-inline > li.divider-vertical {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/*Academic Programs*/
+.program-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.program-sheet {
+    display: inline-block;
+}
+
+.list-divider.search-results > li {
+    margin-bottom: 20px;
+}
+
+/*Media Object*/
+@media (max-width: 420px) {
+    .media-body {
+        display: block;
+        width: auto;
+        margin-top: 10px;
+    }    
+}
+@media (max-width: 678px) {
+.long-form.media-body{
+        display: block;
+        width: auto;
+        margin-top: 10px;
+    }   
+}
+
+/*--------------------------------------------------------------
+3.4 - Tables
+--------------------------------------------------------------*/
+table caption {
+  color: #333;
+  font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+3.6 - Modals
+--------------------------------------------------------------*/
+
+.modal-header {
+  background-color: #005dab;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: #fff;
+}
+
+.modal-body-login {
+  padding: 40px;
+  text-align: center;
+}
+
+.close {
+  color: #fff;
+  text-shadow: 0 1px 0 #000;
+  filter: alpha(opacity=80);
+  opacity: .8;
+}
+
+/*--------------------------------------------------------------
+4.0 - Content
+--------------------------------------------------------------*/
+@media (max-width: 767px) {
+  #siteContent {
+        margin-top: 10px;
+    }
+}
+@media (min-width: 768px) {
+#siteContent {
+      margin-top: 30px;
+  }
+}
+/*--------------------------------------------------------------
+4.1 - Pages
+--------------------------------------------------------------*/
+ /* Article Area */
+article p {
+    margin-bottom: 25px;
+}
+
+.article-body p {
+    margin-bottom: 23px;
+}
+
+.article-byline {
+    margin-bottom: 10px;
+}
+
+.subhead {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    font-style: italic;
+}
+
+.content-title {
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+ .featured-item {
+    margin-bottom:23px;
+}
+
+/* Page Header */
+.page-header {
+    padding-bottom: 6px;
+    border-bottom: 3px double #eee;
+    margin-top: 0px;
+}
+
+.page-header h1 {
+  font-size: 38px;
+  margin: 0px;
+}
+
+.page-header h2 {
+    margin: 0px;
+}
+
+.page-header .page-header-wrap {
+    line-height: 38px;
+}
+
+@media (max-width: 767px) {
+    .page-header h1 {
+        font-size: 28px;
+    }
+    .page-header h2 {
+        font-size: 24px;
+    }
+}
+ /* Related Content */
+.related-content {
+    border-top: none;
+    margin-bottom: 36px;
+}
+
+.related-content iframe {
+    border: none;
+}
+
+.related-title {
+    margin-top: 0;
+    line-height: 1.3;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 6px;
+    padding-top: 0;
+}
+.related-content h4 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+.related-content .btn-primary {
+  padding: 12px 15px;
+}
+.related-content hr {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+@media (max-width: 768px) {
+  .related-content {
+    margin-top: 30px;
+  }
+}
+/*--------------------------------------------------------------
+4.2 - Landing Pages
+--------------------------------------------------------------*/
+.module-header {
+    font-weight: 600;
+    border-bottom: 3px double #eef0f2;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+}
+
+.module-item {
+    border-bottom: 1px solid #eef0f2;
+    padding-bottom: 10px;
+}
+/*Module styling for landing pages*/
+.landing-module>h3 {
+  color: #4d657a;
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 1px solid #c9d0d7;
+  padding-bottom: 4px;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+.landing-module-footer {
+  border-top: 1px solid #c9d0d7;
+  /*border-bottom: 1px solid #c9d0d7;*/
+  text-align: left;
+  font-style: italic;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  text-align: right;
+}
+.landing-module ul {
+  margin-bottom: 8px;
+}
+/*--------------------------------------------------------------
+5.0 - Media
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.1 - Images
+--------------------------------------------------------------*/
+/* all images in our template will scale nicely to the parent element by default */
+/*img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+*/
+/* article image with caption style */
+img.pull-right {
+  margin: 0px 0px 20px 30px;
+}
+
+img.pull-left {
+  margin: 0px 30px 20px 0px;
+}
+
+
+div.image-caption {
+    background-color: #f5f5f5;
+}
+
+.image-caption.pull-right {
+    margin: 0 0 5px 15px;
+}
+
+.image-caption.pull-left {
+    margin: 0 15px 5px 0;
+}
+
+.image-caption p {
+    font-size: 85%;
+    line-height: 1.4;
+    padding: 10px;
+    color: #919191;
+    margin-bottom: 10px;
+}
+
+.article-img {
+    width: 187px;
+}
+
+/*--------------------------------------------------------------
+5.2 - Icons and Thumbnails
+--------------------------------------------------------------*/
+/* no border thumbnail */
+.thumbnail-clean {
+    border: none;
+}
+
+/* global thumbnail bottom spacing */
+.thumbnail {
+    margin-bottom: 30px;
+}
+
+/* override, allow text on social icons */
+.webicon {
+    line-height: 30px;
+    text-indent: 3em;
+}
+
+/* icons width 25px */
+.social-list-sm {
+    line-height: 35px;
+}
+
+.social-list-sm img {
+    width: 25px;
+    display: inline !important;
+}
+
+/* icons width 35px */
+.social-list-md {
+    line-height: 50px;
+}
+
+.social-list-md img {
+    width: 35px;
+    display: inline !important;
+}
+
+/* icons width 45px */
+.social-list-lg {
+    line-height: 60px;
+}
+
+.social-list-lg img {
+    width: 45px;
+    margin-right: 5px;
+}
+
+/* social media effects */
+.social-list-lg img, .social-list-md img, .social-list-sm img {
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.social-list-lg img:hover, .social-list-md img:hover, .social-list-sm img:hover {
+    -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* social justified */
+.social-list-justified {
+    width: 100%;
+}
+
+.social-list-justified > li {
+    text-align: center;
+    display: table-cell;
+    width: 1%;
+}
+/*--------------------------------------------------------------
+5.3 - Captions
+--------------------------------------------------------------*/
+.caption-panel {
+  position: relative;
+  overflow: hidden;
+}
+.caption-container {
+  background-color: rgba(0,0,0,0.87);
+  position: absolute;
+  color: #fff;
+  z-index: 100;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  left: 0;
+}
+.caption-basic {
+  bottom: 0;
+  width: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  text-align: center;
+  line-height: 25px;
+}
+.caption-fadein {
+  opacity: 0;
+  top: 0;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  line-height: 25px;
+  height: 100%;
+}
+.caption-basic p {
+  margin-bottom: 0;
+}
+.caption-panel.img-fade img {
+     opacity: .5;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out; 
+  transition: all 300ms ease-out;
+}
+.caption-simple {
+    height: 30px;
+    width: 100%;
+    display: block;
+    bottom: -30px;
+    line-height: 25pt;
+    text-align: center;
+}
+.caption-teaser {
+    height: 60px;
+    width: 100%;
+    display: block;
+    bottom: -30px;
+    line-height: 25pt;
+    text-align: center; 
+}
+/*Transitions*/
+.caption-panel:hover .image-fadein {
+ opacity: 1;
+}
+.caption-panel:hover .caption-fadein {
+ opacity: 1;
+}
+.caption-panel:hover .caption-simple {
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.caption-panel:hover .caption-teaser {
+    -moz-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+/*Caption Typography*/
+.feature-lead p {
+  margin: 0;
+  padding: 10px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+@media (min-width: 640px) {
+  .feature-lead p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width:991px ) {
+  .feature-lead p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .feature-lead p {
+    padding: 18px;
+  }
+}
+/*--------------------------------------------------------------
+6.0 - Forms
+--------------------------------------------------------------*/
+/* signin section, form and controls style example */
+.signin-section {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.form-control {
+  border-radius: 0;
+}
+/*--------------------------------------------------------------
+6.0 - Global Footer
+--------------------------------------------------------------*/
+.mdc-footer-links {
+    background-color: #222;
+    border-bottom: 1px solid #333333;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    color: #c9c9c9;
+    margin-top: 30px;
+}
+
+.mdc-footer-bottom {
+    font-size: 13px;
+    background-color: #222;
+    padding-top: 20px;
+    color: #c9c9c9;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    margin-right: 20px;
+}
+
+.mdc-footer-links h5, .mdc-footer-links .footer-header {
+    border-bottom: 1px solid #3c3c3c;
+    line-height: 32px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mdc-footer-links li a {
+    color: #c9c9c9;
+}
+
+.mdc-footer-bottom li a {
+    color: #c9c9c9;
+}
+
+.line-right {
+  margin-right: -1px;
+  border-right: 1px solid #3c3c3c;
+}
+
+/* collapse buttons at footer */
+.mdc-footer-links button {
+    float: right;
+}
+
+.campuses-col {
+  margin-bottom: 2px;
+}
+
+.btn-footer-collapse {
+  height: 22px;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 991px) {
+    .mdc-footer-links button {
+        display: none;
+    }
+    /* footer collapse elements */
+    .mdc-footer-links .collapse {
+        display: block;
+        visibility: visible;
+    }
+}
