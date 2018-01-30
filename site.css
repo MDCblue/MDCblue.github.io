@@ -1,0 +1,270 @@
+﻿body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.title-name h1 {
+  font-size: 24px;
+  margin: 0;
+}
+.site-masthead  {
+  background-image: url("../img/vc-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #1565c0;
+  color: #fff;
+}
+.title-name.title-background span {
+  background-color: rgba(2, 71, 138, 0.9);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+ul.checkmark li{
+  list-style-type: none;
+  font-size: 1em;
+}
+
+ul.checkmark li:before {
+  content: '\2713';
+  display: inline-block;
+  color: #06C;
+  padding: 0 6px 0 0;
+  list-style-type: none;
+}
+
+.tutoring-video	{
+	margin-top: 30px;
+	}
+
+.tutoring-video blockquote	{
+	font-size: inherit;
+}
+
+.mdc-carousel .carousel-caption strong {
+    display: block;
+    font-weight: 400;
+    text-shadow: none;
+    font-size: 23px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    line-height: 1.25;
+}
+
+.carousel-caption > strong {
+    margin-top: 0px;
+}
+
+
+@media (min-width: 768px) {
+  .site-masthead  {
+      
+  }
+  .title-area { 
+    width: 100%; 
+    position: relative;
+  }
+  .title-container { 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    display: table; 
+  }
+  .title-name {
+    display: table-cell; 
+    vertical-align: middle;
+  }
+  
+
+  
+}
+@media (max-width: 767px) {
+  .site-masthead {
+    padding:10px 0;
+  }
+  .mdc-carousel .carousel-caption strong {
+    font-size: 16px;
+}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .title-area { 
+    height: 120px;  
+  }
+
+  .title-container { 
+    height: 120px; 
+  }
+
+  .title-name h1 {
+    font-size: 37px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .title-area { 
+    height: 140px;  
+  }
+
+  .title-container { 
+    height: 140px; 
+  }
+
+  .title-name h1 {
+    font-size: 48px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .title-area { 
+    height: 180px;  
+  }
+
+  .title-container { 
+    height: 180px; 
+  }
+  .title-name h1 {
+    font-size: 60px;
+  }
+}
+
+/*
+  .social-media-skip-footer-vc {
+	font-size: 0.9em
+}
+*/
+
+/*Style the Masthead Navigation
+.navbar-default {
+  background-color: #0875CC;
+}
+*/
+
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #64b5f6;
+  color: #333;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #0060a9;
+}
+
+.vc-extra-footer {
+  font-size: 12px;
+  background-color: #222;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  margin-bottom: -30px;
+  color: #8E8B8B;
+  line-height: 16px;
+  border-bottom: 1px solid #3c3c3c;
+}
+.vc-extra-footer .well {
+  background-color: transparent;
+  border: 1px solid #3c3c3c;
+  border-radius: 0;
+  padding: 10px;
+}
+.vc-extra-footer .module-header{
+  border-bottom: 1px solid #3c3c3c;
+}
+.vc-extra-footer a {
+  color: #ffffff;
+}
+.vc-extra-footer a.btn.btn-default.btn-block {
+  color: #337ab7;
+  text-decoration: none;
+}
+.vc-extra-footer a.btn.btn-default.btn-block {
+  color: #337ab7;
+}
+.vc-extra-footer h3 {
+  font-weight: 400;
+}
+.vc-extra-footer h4 {
+  font-weight: 400;
+  font-size: 16px;
+}
+._4s7c {
+  border: none !important;
+  border-top-color: none !important;
+}
+.featured-area {
+  background-color: #222;
+  color: #BBBCBC;
+}
+@media (max-width: 991px) {
+  .cta-section-content {
+    padding-left: 30px;
+  }
+}
+
+.btn-danger {
+  background-color: #ff1744;
+}
+.cta-section hr {
+  border-top: 1px solid #313131;
+}
+.cta-section a {
+  color: #ffffff;
+}
+.cta-section a.btn.btn-default.btn-block {
+  color: #337ab7;
+}
+.cta-section-content{
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+
+  .cta-section { 
+    width: 100%; 
+    position: relative;
+  }
+  .cta-section-container { 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    display: table; 
+  }
+  .cta-section-content {
+    display: table-cell; 
+    vertical-align: middle;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .cta-section { 
+    height: 346px;  
+  }
+
+  .cta-section-container { 
+    height: 346px; 
+  }
+}
+@media (min-width: 1200px) {
+  .cta-section { 
+    height: 421px;
+  }
+
+  .cta-section-container { 
+    height: 421px; 
+  }
+}
+.cta-section-content h4 {
+  font-weight: 400;
+  font-size: 26px;
+}
