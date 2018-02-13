@@ -1,0 +1,254 @@
+﻿/*
+* Created By: MDC Web Services
+* Description: 
+* Revised: 
+*/
+#siteContent {
+  padding-bottom: 30px;
+}
+/*Masthead Code*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.title-name h1 {
+  font-size: 24px;
+  margin: 0;
+}
+.site-masthead  {
+  background-image: url("../img/site-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #1565c0;
+  color: #fff;
+}
+.title-name.title-background span {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@media (min-width: 768px) {
+  .site-masthead  {
+      
+  }
+  .title-area { 
+    width: 100%; 
+    position: relative;
+  }
+  .title-container { 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    display: table; 
+  }
+  .title-name {
+    display: table-cell; 
+    vertical-align: middle;
+  }
+@media (max-width: 767px) {
+  .site-masthead {
+    padding:10px 0;
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .title-area { 
+    height: 120px;  
+  }
+
+  .title-container { 
+    height: 120px; 
+  }
+
+  .title-name h1 {
+    font-size: 37px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .title-area { 
+    height: 140px;  
+  }
+
+  .title-container { 
+    height: 140px; 
+  }
+
+  .title-name h1 {
+    font-size: 48px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .title-area { 
+    height: 180px;  
+  }
+
+  .title-container { 
+    height: 180px; 
+  }
+  .title-name h1 {
+    font-size: 60px;
+  }
+}
+/*Masthead Navigation*/
+.navbar-default {
+    border-color: transparent;
+}
+/*Community*/
+.mdc-community {
+	margin-top: 30px;
+}
+.mdc-community>h3 {
+    color: #4d657a;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #c9d0d7;
+    padding-bottom: 4px;
+    margin-bottom: 17px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+.mdc-community h4 {
+    color: #4d657a;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+.mdc-community a {
+	font-weight: 700;
+}
+.community-listing p {
+	margin-bottom: 30px;
+}
+.community-intro {
+	margin-bottom: 30px;
+}
+.community-intro h3 {
+	color: #4d657a;
+    font-size: 20px;
+    font-weight: 700;
+    
+    margin-bottom: 17px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+@media (min-width: 768px) {
+	.community-intro h3 {
+		margin-top: 0;
+	}
+}
+/*Facts*/
+.mdc-facts {
+  padding-bottom: 30px;
+  border-bottom: 3px solid #eee;
+  margin-bottom: 30px;
+}
+.header-section h3 {
+  font-size: 37px;
+  font-weight: 400;
+}
+.header-section {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+/*Presidents Page*/
+  
+.president .lead {
+    font-size: 16px;
+}
+}
+.president-intro {
+  margin-bottom: 30px;
+}
+
+.caption {
+	margin-bottom: 23px;
+	}
+/*Contact*/
+.about-contact .table > tbody > tr > td {
+  border-top: none;
+}
+.landing-module.emergencies>h3 {
+/* color: #ff1644;
+*/}
+.contact-emergencies>h4 {
+    color: #4d657a;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #c9d0d7;
+    padding-bottom: 4px;
+    margin-bottom: 17px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+.about-contact h4 {
+color: #4d657a;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    background-color: #EBF6FF;
+    padding: 10px;
+}
+
+.contact-h4 {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+h5 {
+  margin-bottom: 2px;
+}
+
+.about-contact .emergencies h4 {
+  background-color: #ff1644;
+  color: #ffffff;
+}
+.about-contact .landing-module {
+  /*margin-top: 30px;*/
+
+}
+.module-footer {
+    border-top: 1px solid #c9d0d7;
+    text-align: left;
+    font-style: italic;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    text-align: right;
+}
+.contact-numbers {
+  margin-bottom: 20px;
+}
+.about-contact .list-divider >li {
+    border-bottom: none;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+/*Homepage*/
+.intro-section-about {
+  margin-top: -20px;
+  background-color: #243340;
+  padding-bottom: 30px;
+}
+.about-cta {
+  margin-top: 30px;
+}
+.about-cta h4 {
+    font-weight: 700;
+    border-bottom: 1px solid #3F6585;
+    padding-bottom: 8px;
+    color: #BCDDFA;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.about-cta a {
+    color: #fff;
+}
