@@ -1,6 +1,6 @@
-﻿/*
+/*
 * Created By: MDC Web Services
-* Description: GLOBAL stylesheet 
+* Description: GLOBAL stylesheet
 * Revised: 8/20/2013
 */
 
@@ -77,13 +77,13 @@ h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h1 .small, .h1 .s
   font-weight: bold;
 }
 
-p a:link, p a:visited, ul a:link, ul a:visited, table a:link, table a:visited, #content a:link, #content a:visited, #siteContent a:link, #siteContent a:visited { 
-  text-decoration: underline; 
-} 
-  
-p a:hover, p a:active, ul a:hover, ul a:active, table a:hover, table a:active, #content a:hover, #content a:active, #siteContent a:hover, #siteContent a:active { 
-  text-decoration: none; 
-} 
+p a:link, p a:visited, ul a:link, ul a:visited, table a:link, table a:visited, #content a:link, #content a:visited, #siteContent a:link, #siteContent a:visited {
+  text-decoration: underline;
+}
+
+p a:hover, p a:active, ul a:hover, ul a:active, table a:hover, table a:active, #content a:hover, #content a:active, #siteContent a:hover, #siteContent a:active {
+  text-decoration: none;
+}
 
 .nav a:link, .nav a:visited, .mdc-footer-links a:link, .mdc-footer-links a:visited, .mdc-footer-bottom a:link, .mdc-footer-bottom a:visited, .panel-title a:link, .panel-title a:visited, .list-decoration a:link, .list-decoration a:visited, .typeahead a:link, .typeahead a:visited, .btn {
   text-decoration: none !important;
@@ -171,8 +171,8 @@ p.navbar-brand {
 /* skip nagivation shows below global when focused with tab key */
 .skip {
   list-style: none;
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
   line-height: 30px;
   background-color: #222;
 }
@@ -282,7 +282,7 @@ body {
   }
   .portals-text {
     display: none;
-  }  
+  }
   .glyphicon-plus-portals {
     font-size:9px;
     top:0;
@@ -407,19 +407,19 @@ form.navbar-right input {
 
 @media (min-width: 768px) {
 
-  .academics-masthead .title-area { 
-    width: 100%; 
+  .academics-masthead .title-area {
+    width: 100%;
     position: relative;
   }
-  .academics-masthead .title-container { 
-    position: absolute; 
-    left: 0; 
-    top: 0; 
-    width: 100%; 
-    display: table; 
+  .academics-masthead .title-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: table;
   }
   .academics-masthead .title-name {
-    display: table-cell; 
+    display: table-cell;
     vertical-align: middle;
   }
 }
@@ -431,12 +431,12 @@ form.navbar-right input {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
-  .academics-masthead .title-area { 
-    height: 120px;  
+  .academics-masthead .title-area {
+    height: 120px;
   }
 
-  .academics-masthead .title-container { 
-    height: 120px; 
+  .academics-masthead .title-container {
+    height: 120px;
   }
 
   .academics-masthead .title-name h1 {
@@ -446,12 +446,12 @@ form.navbar-right input {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .academics-masthead .title-area { 
-    height: 140px;  
+  .academics-masthead .title-area {
+    height: 140px;
   }
 
-  .academics-masthead .title-container { 
-    height: 140px; 
+  .academics-masthead .title-container {
+    height: 140px;
   }
 
   .academics-masthead .title-name h1 {
@@ -461,12 +461,12 @@ form.navbar-right input {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .academics-masthead .title-area { 
-    height: 180px;  
+  .academics-masthead .title-area {
+    height: 180px;
   }
 
-  .academics-masthead .title-container { 
-    height: 180px; 
+  .academics-masthead .title-container {
+    height: 180px;
   }
   .academics-masthead .title-name h1 {
     font-size: 60px;
@@ -512,7 +512,7 @@ box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.19);
 .page-title-hidden {
 	position: absolute;
     left: -100000000px;
-}	
+}
 
 /* For degree titles with track names */
 .page-header h2 {
@@ -744,7 +744,7 @@ body iframe {
     .mdc-carousel .carousel-control.left {
     right: 80px;
     left: auto;
-    }   
+    }
 }
 */
 .mdc-carousel .carousel-control.left {
@@ -793,7 +793,7 @@ body iframe {
         bottom: 0;
         padding: 20px;
         margin: auto;
-        overflow: hidden;   
+        overflow: hidden;
     }
     .mdc-carousel .carousel-caption.headline-left {
         right: 62%;
@@ -802,7 +802,7 @@ body iframe {
         bottom: 0;
         padding: 20px;
         margin: auto;
-        overflow: hidden;   
+        overflow: hidden;
     }
 }
 @media (min-width: 992px) and (max-width: 1366px){
@@ -811,7 +811,7 @@ body iframe {
     }
     .mdc-carousel .carousel-caption.headline-left{
         height: 180px;
-    } 
+    }
 }
 @media (min-width: 1367px) {
     .mdc-carousel .carousel-caption.headline-right {
@@ -840,38 +840,38 @@ body iframe {
   padding-right: 30px;
 }
 @media (min-width: 992px) {
-  .cta-section { 
-    width: 100%; 
+  .cta-section {
+    width: 100%;
     position: relative;
   }
-  .cta-section-container { 
-    position: absolute; 
-    left: 0; 
-    top: 0; 
-    width: 100%; 
-    display: table; 
+  .cta-section-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: table;
   }
   .cta-section-content {
-    display: table-cell; 
+    display: table-cell;
     vertical-align: middle;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .cta-section { 
-    height: 338px;  
+  .cta-section {
+    height: 338px;
   }
 
-  .cta-section-container { 
-    height: 338px; 
+  .cta-section-container {
+    height: 338px;
   }
 }
 @media (min-width: 1200px) {
-  .cta-section { 
+  .cta-section {
     height: 413px;
   }
 
-  .cta-section-container { 
-    height: 413px; 
+  .cta-section-container {
+    height: 413px;
   }
 }
 .cta-section-content h4 {
@@ -923,7 +923,7 @@ margin-bottom: 30px;
 }
 .social-col li a img {
 text-decoration:none;
-margin-right:10px;	
+margin-right:10px;
 }
 /*--------------------------------------------------------------
 3.4 - Lists
@@ -970,14 +970,14 @@ margin-right:10px;
         display: block;
         width: auto;
         margin-top: 10px;
-    }    
+    }
 }
 @media (max-width: 678px) {
 .long-form.media-body{
         display: block;
         width: auto;
         margin-top: 10px;
-    }   
+    }
 }
 
 /*--------------------------------------------------------------
@@ -1324,7 +1324,7 @@ div.image-caption {
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
     -o-transition: all 300ms ease-out;
-    -ms-transition: all 300ms ease-out; 
+    -ms-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
 }
 .caption-simple {
@@ -1341,7 +1341,7 @@ div.image-caption {
     display: block;
     bottom: -30px;
     line-height: 25pt;
-    text-align: center; 
+    text-align: center;
 }
 /*Transitions*/
 .caption-panel:hover .image-fadein {

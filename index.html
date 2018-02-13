@@ -1,0 +1,719 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>MDC Blue | Programming Team</title>
+      <!--GLOBAL STYLES-->
+
+      <!-- Meta Tags -->
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <!-- Global Bootstrap -->
+      <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+      <!-- Global Style -->
+      <link href="assets/css/mdc.css" rel="stylesheet" />
+      <link href="assets/css/style.css" rel="stylesheet" />
+      <link href="assets/css/print.css" rel="stylesheet" media="print">
+
+      <!-- Google Fonts -->
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,800' rel='stylesheet' type='text/css'>
+
+      <!-- Local Style -->
+      <link href="assets/css/site.css" rel="stylesheet" />
+
+      <!-- Font Awesome -->
+      <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+      <!--Global Head Scripts-->
+      <!--jQuery remote or local library reference-->
+      <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+      <script>window.jQuery || document.write('<script src="http://mdc.edu/college_wide/template14/js/jquery.min.js"><\/script>')</script>
+
+  </head>
+  <body>
+    <!--Navigation and Masthead-->
+    <!--ACCESSIBILITY-->
+      <img class="visible-print-inline print-logo" src="assets/images/mdc-logo.png" alt="Miami Dade College">
+      <ul class="skip">
+        <li><a href="#siteNav">Skip to site navigation</a></li>
+        <li><a href="#siteContent">Skip to content</a></li>
+      </ul>
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header mdc-branding">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".global-nav">
+                <span class="sr-only">Toggle MDC navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://www.mdc.edu/"><img src="assets/images/mdc-logo-white.png" alt="Miami Dade College"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse global-nav">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-expanded="false" role="button" href="#" title="About MDC Dropdown">
+                    About MDC
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="http://www.mdc.edu/about/">About Miami Dade College</a></li>
+                        <li><a href="http://www.mdc.edu/future-students/">Future Students</a></li>
+                        <li><a href="http://www.mdc.edu/about/leadership/">Leadership</a></li>
+                        <li><a href="http://www.mdc.edu/about/community.aspx">Community Engagement</a></li>
+                        <li><a href="http://www.mdc.edu/campus-finder/">Campuses and Centers</a></li>
+                        <li><a href="http://www.mdc.edu/jobs/">Jobs at MDC</a></li>
+                        <li><a href="http://www.mdc.edu/sustainability/">Sustainability</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-expanded="false" role="button" href="#" title="Academics Dropdown">
+                    Academics
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="http://www.mdc.edu/academics/">Academic Programs</a></li>
+                        <li><a href="http://www.mdc.edu/academics/calendar/">Academic Calendar</a></li>
+                        <li><a href="http://www.mdc.edu/honorsCollege/">The Honors College</a></li>
+                        <li><a href="http://www.mdc.edu/virtual/">Virtual College</a></li>
+                        <li><a href="http://www.mdc.edu/ce/">Continuing Education</a></li>
+                        <li><a href="http://nwsa.mdc.edu/">New World School of the Arts</a></li>
+                        <li><a href="http://www.mdc.edu/learning-resources/libraries/">Libraries</a></li>
+                        <li><a href="http://www.mdc.edu/learning-resources/">Learning Resources</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-expanded="false" role="button" href="#" title="Admissions Dropdown">
+                    Admissions
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="http://www.mdc.edu/admissions/">Apply Now</a></li>
+                        <li><a href="http://www.mdc.edu/registration/">Register for Classes</a></li>
+                        <li><a href="http://www.mdc.edu/transcripts/">Transcripts</a></li>
+                        <li><a href="http://www.mdc.edu/testing/">Testing Information</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-expanded="false" role="button" href="#" title="Paying for College Dropdown">
+                    Paying for College
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="http://www.mdc.edu/about/tuition.aspx">Tuition and Fees</a></li>
+                        <li><a href="http://www.mdc.edu/financialaid/">Financial Aid</a></li>
+                        <li><a href="http://www.mdc.edu/scholarships/" title="MDC Scholarships">Scholarships</a></li>
+                        <li><a href="http://www.mdc.edu/costs/">Payment Options</a></li>
+                        <li><a href="http://www.mdc.edu/workstudy/">Student Work Programs</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-expanded="false" role="button" href="#" title="Life at MDC Dropdown">
+                    Life at MDC
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="http://www.mdc.edu/about/community.aspx#ArtsCulture">Arts &amp; Culture</a></li>
+                        <li><a href="http://calendar.mdc.edu/">Events</a></li>
+                        <li><a href="http://news.mdc.edu/">News</a></li>
+                        <li><a href="http://www.mdc.edu/studentlife/">Student Life</a></li>
+                        <li><a href="http://www.mdc.edu/athletics/">Athletics</a></li>
+                        <li><a href="http://www.mdc.edu/safety/">Public Safety</a></li>
+                        <li><a href="http://www.mdc.eduhttp://mdc.edu/collegeforum/">College Forum</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right hidden-sm" role="search" action="http://www.mdc.edu/search/" id="searchbox1_003737384118370267526:hchzsajmmww">
+                <fieldset>
+                    <legend>Search MDC site</legend>
+                    <ul class="nav navbar-nav navbar-portals">
+                        <li class="dropdown dropdown-portals">
+                            <a class="dropdown-toggle dropdown-toggle-portals" data-toggle="dropdown" data-hover="dropdown" href="#"><img src="http://mdc.edu/college_wide/template14/img/icon-plus-portals.png" alt="Expand portals menu" class="icon-plus-portals"> <span class="portals-text">Portals</span></a>
+                            <ul class="dropdown-menu dropdown-menu-portals" role="menu">
+                                <li class="dropdown-header-portals">Students</li>
+                                <li><a href="https://student.mdc.edu/">Student Portal</a></li>
+                                <li><a href="http://www.mdc.edu/mdconnect/" title="MDConnect student link" target="_blank">MDConnect</a></li>
+                                <li><a href="http://mdc.blackboard.com/" target="_blank">Blackboard</a></li>
+                                <li><a href="https://sharknet.mdc.edu/" target="_blank">SharkNet</a></li>
+                                <li><a href="http://email.mymdc.net/" target="_blank">Student Email</a></li>
+                                <li class="dropdown-header-portals">Employees</li>
+                                <li><a href="https://www.mdc.edu/employees/">Employee Portal</a></li>
+                                <li><a href="http://mdconnect.mdc.edu/" title="MDConnect employee link" target="_blank">MDConnect</a></li>
+                                <li><a href="http://www.mdc.edu/owa/">Email</a></li>
+                                <li><a href="http://www.mdc.edu/retirees/">Retiree Portal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="input-group">
+                        <input type="hidden" name="cx" value="003737384118370267526:hchzsajmmww" />
+                        <input type="hidden" name="cof" value="FORID:11" />
+                        <input type="text" class="form-control" placeholder="Search" name="q" aria-label="Enter keywords to search MDC" />
+                        <span style="DISPLAY:none">
+                            <input name="sitesearch" type="radio" class="radionot" value="www.mdc.edu" checked="checked" title="Search" />
+                        </span>
+                        <span class="input-group-btn">
+                            <button type="submit" name="sa" class="btn btn-primary btn-primary-global-nav" aria-label="Search"><img src="http://mdc.edu/college_wide/template14/img/icon-search.png" alt="Search"></button>
+                        </span>
+                    </div><!-- /input-group -->
+                </fieldset>
+            </form>
+            <form class="navbar-form navbar-right visible-sm" role="search">
+                <ul class="nav navbar-nav navbar-portals">
+                    <li class="dropdown dropdown-portals">
+                        <a class="dropdown-toggle dropdown-toggle-portals" data-toggle="dropdown" data-hover="dropdown" href="#"><img src="http://mdc.edu/college_wide/template14/img/icon-plus-portals.png" alt="Expand portals menu" class="icon-plus-portals"> <span class="portals-text">Portals</span></a>
+                        <ul class="dropdown-menu dropdown-menu-portals" role="menu">
+                            <li class="dropdown-header-portals">Students</li>
+                            <li><a href="https://student.mdc.edu/">Student Portal</a></li>
+                            <li><a href="http://www.mdc.edu/mdconnect/" title="MDConnect Student link" target="_blank">MDConnect</a></li>
+                            <li><a href="http://mdc.blackboard.com/" target="_blank">Blackboard</a></li>
+                            <li><a href="https://sharknet.mdc.edu/" target="_blank">SharkNet</a></li>
+                            <li><a href="http://email.mymdc.net/" target="_blank">Student Email</a></li>
+                            <li class="dropdown-header-portals">Employees</li>
+                            <li><a href="https://www.mdc.edu/employees/">Employee Portal</a></li>
+                            <li><a href="http://mdconnect.mdc.edu/" title="MDConnect employee link" target="_blank">MDConnect</a></li>
+                            <li><a href="http://www.mdc.edu/owa/">Email</a></li>
+                            <li><a href="http://www.mdc.edu/retirees/">Retiree Portal</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="input-group search-icon">
+                    <a class="btn search-trigger" data-toggle="collapse" data-target="#search-collapse" aria-label="Search"><img src="http://mdc.edu/college_wide/template14/img/icon-search.png" alt="Search"></a>
+                </div><!-- /input-group -->
+            </form>
+        </div><!-- /.navbar-collapse -->
+        <div class="collapse pull-right " id="search-collapse">
+            <div class="visible-sm">
+                <form role="search" action="http://www.mdc.edu/search/" id="searchbox2_003737384118370267526:hchzsajmmww">
+                    <fieldset>
+                        <legend>Search MDC site</legend>
+                        <div class="input-group hidden-search">
+                            <input type="hidden" name="cx" value="003737384118370267526:hchzsajmmww" />
+                            <input type="hidden" name="cof" value="FORID:11" />
+                            <input type="text" class="form-control" placeholder="Search" name="q" aria-label="Enter keywords to search MDC" />
+                            <span style="DISPLAY:none">
+                                <input name="sitesearch" type="radio" class="radionot" value="www.mdc.edu" checked="checked" title="Search" />
+                            </span>
+                            <span class="input-group-btn">
+                                <button type="submit" name="sa" class="btn btn-primary btn-primary-global-nav" aria-label="Search"><img src="http://mdc.edu/college_wide/template14/img/icon-search.png" alt="Search"></button>
+                            </span>
+                        </div>
+                    </fieldset>
+                </form>
+            </div><!-- /input-group -->
+        </div>
+    </div>
+</nav><!-- Site Title and Media -->
+<div class="site-masthead">
+        <div class="container">
+            <div class="title-area">
+                <div class="title-container">
+                    <div class="title-name">
+                        <h1>MDC Blue</h1>
+                        <h4>Miami Dade College Programming Team </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Site Navigation -->
+<div id="siteNav" class="navbar navbar-default navbar-static-top mdc-nav" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".site-nav">
+				<span class="sr-only">Toggle site navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse site-nav">
+            <ul class="nav navbar-nav page-navigation">
+                <li><a href="#" target="_blank"><span class="fa fa-home"></span> Home</a></li>
+                <li><a href="https://sharknet.mdc.edu/organization/MDCblue" target="_blank">Join</a></li>
+                <li><a href="https://mdc.blue/problems" target="_blank"><span class="fas fa-book"></span> Problems</a></li>
+                <li><a href="schedule/schedule.html"><span class="far fa-clock" target="_blank"></span> Schedule</a></li>
+                <li><a href="https://github.com/mdcblue" target="_blank"><span class="fab fa-github"></span> GitHub</a></li>
+                <li><a href="https://gitter.im/mdcblue" target="_blank"><span class="fab fa-gitter"></span> Chat on Gitter</a></li>
+                <li><a href="#" target="_blank"><span class="far fa-comments"></span> Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div id="siteContent" class="container">
+        <div class="page-header">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Tuition and Fees 2017 - 2018</h2>
+                </div>
+                <div class="col-sm-4">
+                    <!--SOCIAL BUTTONS-->
+                    <div class="addthis_inline_share_toolbox social-buttons pull-right hidden-print"></div>
+                </div>
+            </div>
+        </div>
+        <!-- MAIN COLUMN -->
+
+
+
+      <div class="row row-tuition well well-tuition">
+            <div class="col-sm-12">
+                <h3>College Credit Programs</h3>
+                <p><strong>Associate Programs, College Credit Certificate (C.C.C.), Advanced Technical Certificate (A.T.C.), Developmental Education and Educator Preparatory</strong></p>
+            </div>
+		    <h4 style="margin-left:15px">2017-2018 Fee Per Credit Hour</h4>
+
+
+<!-- First Table -->
+<div class="col-sm-6">
+  <table class="table table-bordered table-striped table-tuition">
+  <caption aria-label="College Credit Programs for Resident Students">Resident Students</caption>
+      <tr>
+        <th scope="col">Financials</th>
+		<th scope="col">Amount</th>
+      </tr>
+      <tr>
+        <td>Tuition</td>
+        <td>$82.78</td>
+      </tr>
+      <tr>
+        <td>Student Services</td>
+        <td>$8.28</td>
+      </tr>
+      <tr>
+        <td>Financial Aid</td>
+        <td>$4.14</td>
+      </tr>
+      <tr>
+        <td>Capital Improvement</td>
+        <td>$15.88</td>
+      </tr>
+      <tr>
+        <td>Technology</td>
+        <td>$4.14</td>
+      </tr>
+      <tr>
+        <td>Access and Parking</td>
+        <td>$3.00</td>
+      </tr>
+      <tr class="info">
+        <th scope="row">Total Cost Per Credit </th>
+        <td><strong>$118.22</strong></td>
+      </tr>
+      <tr class="success">
+        <th scope="row">Cost per Term (12 credits)</th>
+        <td>$1,418.64</td>
+      </tr>
+  </table>
+</div>
+
+ <!-- Second Table -->
+<div class="col-sm-6">
+  <table class="table table-bordered table-striped table-tuition">
+  <caption aria-label="College Credit Programs for Non-Resident Students">Non-Resident Students</caption>
+		<tr>
+		<th scope="col">Financials</th>
+		<th scope="col">Amount</th>
+		</tr>
+      <tr>
+        <td>Tuition + Out-of-State</td>
+        <td>$331.11</td>
+      </tr>
+      <tr>
+        <td>Student Services</td>
+        <td>$8.28</td>
+      </tr>
+      <tr>
+        <td>Financial Aid</td>
+        <td>$16.56</td>
+      </tr>
+      <tr>
+        <td>Capital Improvement</td>
+        <td>$27.00</td>
+      </tr>
+      <tr>
+        <td>Technology</td>
+        <td>$16.56</td>
+      </tr>
+      <tr>
+        <td>Access and Parking</td>
+        <td>$3.00</td>
+      </tr>
+      <tr class="info">
+        <th scope="row">Total Cost Per Credit</th>
+        <td><strong>$402.51</strong></td>
+      </tr>
+      <tr class="success">
+        <th scope="row">Cost per Term (12 credits)</th>
+        <td>$4,830.12</th>
+      </tr>
+  </table>
+</div>
+        </div>
+        <br>
+
+        <!-- Baccalaureate Programs include -->
+        <div class="row row-tuition well well-tuition">
+            <div class="col-sm-12">
+                <h3>Baccalaureate Programs</h3>
+                <p><strong>Bachelor of Applied Science (BAS), Bachelor of Science (BS), and Bachelor of Science in Nursing (BSN)</strong></p>
+            </div>
+<h4 style="margin-left:15px">2017-2018 Fee Per Credit Hour</h4>
+<!-- First Table -->
+<div class="col-sm-6">
+  <table class="table table-bordered table-striped table-tuition">
+  <caption aria-label="Baccalaureate Programs for Resident Students">Resident Students</caption>
+      <tr>
+        <th scope="col">Financials</th>
+		<th scope="col">Amount</th>
+      </tr>
+      <tr>
+        <td>Tuition</td>
+        <td>$91.79</td>
+      </tr>
+      <tr>
+        <td>Student Services</td>
+        <td>$9.18</td>
+      </tr>
+      <tr>
+        <td>Financial Aid</td>
+        <td>$4.59</td>
+      </tr>
+      <tr>
+        <td>Capital Improvement</td>
+        <td>$16.74</td>
+      </tr>
+      <tr>
+        <td>Technology</td>
+        <td>$4.59</td>
+      </tr>
+      <tr>
+        <td>Access and Parking</td>
+        <td>$3.00</td>
+      </tr>
+      <tr class="info">
+        <th scope="row">Total Cost Per Credit</th>
+        <td><strong>$129.89</strong></td>
+      </tr>
+      <tr class="success">
+        <th scope="row">Cost per Term (12 credits)</th>
+        <td>$1,558.68</td>
+      </tr>
+    </table>
+</div>
+
+ <!-- Second Table -->
+<div class="col-sm-6">
+  <table class="table table-bordered table-striped table-tuition">
+  <caption aria-label="Baccalaureate Programs for Non-Resident Students">Non-Resident Students</caption>
+		<tr>
+		<th scope="col">Financials</th>
+		<th scope="col">Amount</th>
+		</tr>
+      <tr>
+          <td>Tuition + Out-of-State</td>
+          <td>$448.79</td>
+      </tr>
+        <tr>
+          <td>Student Services</td>
+          <td>$9.18</td>
+        </tr>
+        <tr>
+          <td>Financial Aid</td>
+          <td>$22.44</td>
+        </tr>
+        <tr>
+          <td>Capital Improvement</td>
+          <td>$30.12</td>
+        </tr>
+        <tr>
+          <td>Technology</td>
+          <td>$22.44</td>
+        </tr>
+        <tr>
+          <td>Access and Parking</td>
+          <td>$3.00</td>
+        </tr>
+        <tr class="info">
+          <th scope="row">Total Cost Per Credit</th>
+          <td><strong>$535.97</strong></td>
+        </tr>
+        <tr class="success">
+          <th scope="row">Cost per Term (12 credits)</th>
+          <td>$6,431.64</td>
+        </tr>
+    </table>
+</div>
+</div>
+
+        <!-- Certificate Programs include -->
+        <div class="row row-tuition well well-tuition">
+            <div class="col-sm-12">
+                <h3>Career and Technical Education Programs</h3>
+                <p><strong>Career Technical Certificate (C.T.E./V.C.C.)</strong></p>
+            </div>
+<h4 style="margin-left:15px">2017-2018 Fee Per Credit Hour</h4>
+<!-- First Table -->
+<div class="col-sm-6">
+  <table class="table table-bordered table-striped table-tuition">
+  <caption aria-label="Career and Technical Education Programs
+ for Resident Students">Resident Students</caption>
+      <tr>
+        <th scope="col">Financials</th>
+		<th scope="col">Amount</th>
+      </tr>
+      <tr>
+        <td>Tuition</td>
+        <td>$73.40</td>
+      </tr>
+      <tr>
+        <td>Student Services</td>
+        <td>$0.00</td>
+      </tr>
+      <tr>
+        <td>Financial Aid</td>
+        <td>$7.34</td>
+      </tr>
+      <tr>
+        <td>Capital Improvement</td>
+        <td>$3.67</td>
+      </tr>
+      <tr>
+        <td>Technology</td>
+        <td>$3.67</td>
+      </tr>
+      <tr>
+        <td>Access and Parking</td>
+        <td>$3.00</td>
+      </tr>
+      <tr class="info">
+        <th scope="row">Total Cost Per Credit</th>
+        <td><strong>$91.08</strong></td>
+      </tr>
+      <tr class="success">
+        <th scope="row">Cost per Term (12 credits)</th>
+        <td>$1,092.96</td>
+      </tr>
+    </table>
+</div>
+
+ <!-- Second Table -->
+<div class="col-sm-6">
+  <table class="table table-bordered table-striped table-tuition">
+  <caption aria-label="Career and Technical Education Programs
+ for Non-Resident Students">Non-Resident Students</caption>
+		<tr>
+		<th scope="col">Financials</th>
+		<th scope="col">Amount</th>
+		</tr>
+      <tr>
+          <td>Tuition + Out-of-State</td>
+          <td>$293.59</td>
+      </tr>
+        <tr>
+          <td>Student Services</td>
+          <td>$0.00</td>
+        </tr>
+        <tr>
+          <td>Financial Aid</td>
+          <td>$29.36</td>
+        </tr>
+        <tr>
+          <td>Capital Improvement</td>
+          <td>$14.68</td>
+        </tr>
+        <tr>
+          <td>Technology</td>
+          <td>$14.68</td>
+        </tr>
+        <tr>
+          <td>Access and Parking</td>
+          <td>$3.00</td>
+        </tr>
+        <tr class="info">
+          <th scope="row">Total Cost Per Credit</th>
+          <td><strong>$355.31</strong></td>
+        </tr>
+        <tr class="success">
+          <th scope="row">Cost per Term (12 credits)</th>
+          <td>$4,263.72</td>
+        </tr>
+    </table>
+</div>
+</div>
+
+        <!-- Non-Credit Adult Basic Education include -->
+        <div class="row row-tuition well well-tuition">
+  <div class="col-sm-12">
+    <h3>Non-Credit Adult Basic Education</h3>
+    <h4>2017-2018 Fee Per Credit Hour</h4>
+    <h5>Resident and Non-Resident Students</h5>
+    <p>Total fees per term are $31.50</p>
+  </div>
+  <!-- First Table -->
+
+</div>
+
+        <hr>
+
+        <!-- Program Details include -->
+        <h3>Program Details</h3>
+<ul>
+  <li><strong>Special Registration Fees:</strong> <br>
+    Some courses carry special fees in addition to the regular registration fees. <br>
+  </li>
+  <li><strong>Payment by Credit Card:</strong> <br>
+  Acceptable forms of payment are American Express, Discover, Master Card, Visa, and eCheck. The 2% service fee is non-refundable.  Credit cards are accepted for purchases in the campus bookstore ($15.00 or more).  Charge card payments must be made in person or on the Web. They cannot be accepted by mail or phone. </li>
+  <li><strong>Payment Plan</strong><br />
+    The Nelnet Payment Plan is available to students who need an option for paying course and tuition fees/credit unit fees not covered by Financial Aid and/or other sources. There is a <i>$40 per semester sign-up fee</i> for using the <a href="http://www.mycollegepaymentplan.com/mdc" target="_blank">Nelnet Payment Plan</a>. For more information please visit <a href="http://www.mycollegepaymentplan.com/mdc" targer="_blank">MDC's Nelnet Payment page</a>
+<br>
+  </li>
+  <li><strong>Pay Via Western Union</strong><br>
+    A great choice for International or out of state payments. <a href="/wiretransfer/">Make payments directly to MDC via Western Union</a> using the currency of your choice. <br>
+  </li>
+  <li><strong>$30 Admission Application Processing Fee:</strong> <br>
+    All new college credit students are assessed a $30 non-refundable admission application processing fee. This fee must be paid when you submit the application. <br>
+  </li>
+  <li><strong>$25 Bachelor's Degree In-Program Admission Application Processing Fee:</strong> <br>
+    All students admitted to an in-program Bachelor's degree are assessed a $25 non-refundable admission application processing fee. <br>
+  </li>
+  <li><strong>$50 International Student Admission Application Processing Fee:</strong><br>
+    All new international students are assessed a $50 non-refundable admission application processing fee.  <br>
+  </li>
+  <li><strong>$15 Per Credit - Virtual College Fee:</strong> <br>
+    Virtual College classes have a distance learning fee of $15 per credit. (i.e. $45 for a 3-credit course). To comply with federal requirements, the Virtual College uses secure login and password to verify the identity of online students.  There are no additional student charges associated with verification of student identification.  <br>
+  </li>
+  <li><strong>$50 Late Registration Fee:</strong> <br>
+    College credit students registering on or after the first day of classes will be assessed a $50 non-refundable late registration fee. Please check the <a href="/academics/calendar/" title="Academic Calendar 2008-2009" target="_blank">Academic Calendar</a> for dates. <br>
+  </li>
+  <li><strong>Resident Students / Non-Resident Students: <br>
+  </strong><a href="/main/flresidency/default.aspx" target="_blank">Review information about Florida Residency for Tuition Purposes</a> online.</li>
+</ul>
+<p><strong>All fees are subject to change without notice</strong></p>
+
+        <hr>
+
+        <!-- Refund Policy include -->
+        <h3>Refund Policy</h3>
+<ul>
+  <li>Refunds of matriculation and tuition fees are made only if official drop or withdrawal cards are turned in at the campus Admissions and Registration Office by the published deadlines (see <a href="/academics/calendar/" title="Academic Calendar 2008-2009" target="_blank">Academic Calendar</a>), or if you drop via the web (and the drop is confirmed) by the deadline. <br>
+  </li>
+  <li>If the student withdraws from the College as a result of administrative action or for the convenience of the College, except for disciplinary reasons, the student is entitled to a full refund of matriculation and tuition fees. <br>
+  </li>
+  <li>If the student is dropped from a class due to cancellation of that class, the student is entitled to a full refund of matriculation and tuition fees. <br>
+  </li>
+  <li>If the student is withdrawn from a course or courses for disciplinary reasons, the student is not entitled to a refund of matriculation, tuition or special fees. <br>
+  </li>
+  <li>The admissions application fees (for credit, bachelor's, and international student admissions) and late registration fees are not refundable.  <br>
+  </li>
+  <li>Refunds for payments made with cash/checks will be refunded via the MDC One Card. Payments made with Visa/MasterCard/American Express will be refunded to the credit card account.</li>
+</ul>
+<hr>
+          <p><a href="pdf/Tuition-Fees-2016-2017.pdf" target="_blank">View the 2016-2017 tuition and fees (PDF)</a>.</p>
+        <!-- MAIN COLUMN DIV: This is the div for the main column -->
+
+        <!-- END MAIN COLUMN -->
+    </div><!--End siteContent -->
+    <!--Footer-->
+    <div class="mdc-footer-links hidden-print" id="mdc-footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button type="button" class="btn btn-default btn-xs btn-footer-collapse" data-toggle="collapse" data-target=".campuses-col">
+                    <img src="assets/images/icon-plus-333.png" alt="Expand footer menu">
+                </button>
+                <div class="footer-header">Campuses and Centers</div>
+                <div class="row">
+                    <div class="col-md-6">
+                    <ul class="list-unstyled collapse campuses-col">
+                            <li><a href="http://www.mdc.edu/hialeah/" title="Hialeah Campus homepage">Hialeah</a></li>
+                            <li><a href="http://www.mdc.edu/homestead/" title="Homestead Campus homepage">Homestead</a></li>
+                            <li><a href="http://www.mdc.edu/iac/" title="InterAmerican Campus homepage">InterAmerican</a></li>
+                            <li><a href="http://www.mdc.edu/kendall/" title="Kendall Campus homepage">Kendall</a></li>
+                            <li><a href="http://www.mdc.edu/west/" title="West Campus homepage">West</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled collapse campuses-col">
+                            <li><a href="http://www.mdc.edu/north/campus-information/eec.aspx" title="Meek Entrepreneurial Education Center homepage">MEEC</a></li>
+                            <li><a href="http://www.mdc.edu/medical/" title="Medical Campus homepage">Medical</a></li>
+                            <li><a href="http://www.mdc.edu/north/" title="North Campus homepage">North</a></li>
+                            <li><a href="http://www.mdc.edu/wolfson/" title="Wolfson Campus homepage">Wolfson</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-default btn-xs btn-footer-collapse" data-toggle="collapse" data-target=".info-col">
+                    <img src="assets/images/icon-plus-333.png" alt="Expand footer menu">
+                </button>
+                <div class="footer-header">Information</div>
+                <ul class="list-unstyled collapse info-col">
+                    <li><a href="http://www.mdc.edu/future-students/">Future Students</a></li>
+                    <li><a href="http://student.mdc.edu/">Current Students</a></li>
+                    <li><a href="https://www.mdc.edu/employees/">Employees</a></li>
+                    <li><a href="http://www.mdc.edu/retirees/">Retirees</a></li>
+                    <li><a href="http://www.mdc.edu/about/business.aspx">Business Opportunities</a></li>
+                    <li><a href="http://www.mdcalumni.com/">Alumni &amp; Donors</a></li>
+                    <li><a href="http://www.mdc.edu/mobile/">Mobile App</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3" id="mdc-footer-social-media">
+                <button type="button" class="btn btn-default btn-xs btn-footer-collapse" data-toggle="collapse" data-target=".social-col">
+                    <img src="assets/images/icon-plus-333.png" alt="Expand footer menu">
+                </button>
+                <div class="footer-header">Connect with MDC</div>
+                <ul class="list-unstyled collapse social-list-sm social-col">
+                    <li><a href="http://www.facebook.com/mdcollege/" target="_blank"><img src="http://mdc.edu/college_wide/template14/img/social-icons/webicon-facebook.png" alt="Visit the MDC Facebook page">Find MDC on Facebook</a></li>
+                    <li><a href="http://twitter.com/mdcollege/" target="_blank"><img src="http://mdc.edu/college_wide/template14/img/social-icons/webicon-twitter.png" alt="View the MDC Twitter feed">Follow MDC on Twitter</a></li>
+                    <li><a href="https://www.instagram.com/mdcollege/" target="_blank"><img src="http://mdc.edu/college_wide/template14/img/social-icons/webicon-instagram.png" alt="Visit the MDC Instagram page">Follow MDC on Instagram</a></li>
+                    <li><a href="http://www.youtube.com/user/MiamiDadeColleges/" target="_blank"><img src="http://mdc.edu/college_wide/template14/img/social-icons/webicon-youtube.png" alt="Visit the MDC YouTube channel">Watch MDC on YouTube</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-default btn-xs btn-footer-collapse" data-toggle="collapse" data-target=".help-col">
+                    <img src="assets/images//icon-plus-333.png" alt="Expand footer menu">
+                </button>
+                <div class="footer-header">Get Help</div>
+                <ul class="list-unstyled collapse help-col">
+                    <li><a href="https://faq.mdc.edu/" title="Help and Frequently Asked Questions">Help &amp; FAQs</a></li>
+                    <li><a href="http://www.mdc.edu/about/contact/" title="Contact Miami Dade College">Contact Us</a></li>
+                    <li><a href="http:/http://mdc.edu/collegedirectory.mdc.edu/">College Directory</a></li>
+                    <li><a href="http://www.mdc.edu/sitemap/">Sitemap</a></li>
+                    <li><a href="http://your.mdc.edu/inquiryform/" title="Request information about Miami Dade College" target="_blank">Request Information</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mdc-footer-bottom hidden-print">
+    <div class="container">
+        <ul class="list-inline">
+            <li class="line-right"> &#169; Miami Dade College</li>
+            <li class="line-right"><a href="http://www.mdc.edu/privacy/">Privacy Policy</a></li>
+            <li class="line-right"><a href="http://www.mdc.edu/about/consumer_information.aspx">Consumer Information</a></li>
+            <li class="line-right"><a href="http://www.mdc.edu/ada/">Equal Opportunity Programs/ADA</a></li>
+            <li class="line-right"><a href="http://www.mdc.edu/jobs/">Jobs at MDC</a></li>
+            <li class="line-right"><a href="http://www.mdc.edu/humanresources/" title="MDC Human Resources department">Human Resources</a></li>
+            <li class="line-right"><a href="http://www.mdc.edu/feedback/website-feedback.aspx">Site Feedback</a></li>
+            <li><a href="http://www.mdc.edu/accreditation/">Regional Accreditation</a></li>
+        </ul>
+    </div>
+</div>
+
+
+    <!--Global Script-->
+    <!--<script src="assets/js/bootstrap.min.js"></script>-->
+    <script src="http://www.mdc.edu/college_wide/template14/js/bootstrap.min.js"></script>
+    <script src="assets/js/navigation.script.js"></script>
+    <script src="assets/js/mdc.script.js"></script>
+    <script src="assets/js/mdc.functions.min.js"></script>
+    <script src="assets/js/bootstrap-hover-dropdown.js"></script>
+    <script type="text/javascript"  src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+      <div style="display:none;">
+        <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+      </div>
+</script>
+</body>
+</html>
